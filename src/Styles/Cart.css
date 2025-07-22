@@ -1,0 +1,350 @@
+/* Elegant Dark Theme Cart Styling */
+.cartes {
+    background-color: #121212;
+    color: #f5f5f5;
+    padding: 50px 30px;
+    max-width: 900px;
+    margin: 60px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fide 0.5s ease-in-out;
+
+    
+}
+@keyframes fide {
+        0%{opacity: 0;}
+        100%{opacity:1;}
+    }
+
+@media (max-width: 960px) {
+    .cartes {
+        max-width: 90%;
+        margin: 40px auto;
+        padding: 30px 20px;
+    }
+}
+
+.cartes h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+    .cartes h2 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}
+
+.cartes p {
+    text-align: center;
+    font-size: 18px;
+    color: #9e9e9e;
+    margin-bottom: 35px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .cartes p {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: #2dd4bf;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(45, 212, 191, 0.3);
+    animation: buttonFadeIn 0.5s ease-out;
+}
+
+.cta-button:hover {
+    background-color: #14b8a6;
+    transform: translateY(-2px);
+}
+
+.delete-shops {
+    text-align: right;
+    font-size: 20px;
+    color: #9e9e9e;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+    animation: buttonFadeIn 0.5s ease-out;
+}
+
+.delete-shops:hover {
+    color: #ff4d4d;
+}
+
+.cart-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px 25px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .cart-ul li {
+        padding: 15px;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+.cart-ul li:hover {
+    background-color: #242424;
+    transform: translateX(5px);
+}
+
+.cart-fruit-name {
+    flex: 2;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .cart-fruit-name {
+        flex: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.cart-fruit-price {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+    color: #2dd4bf;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(45, 212, 191, 0.3);
+}
+
+@media (max-width: 768px) {
+    .cart-fruit-price {
+        flex: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+.count-buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .count-buttons {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.count-buttons button {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 8px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: buttonFadeIn 0.5s ease-out;
+}
+
+.count-buttons button:hover {
+    background-color: #3a3a3a;
+    transform: scale(1.05);
+}
+
+.total-price {
+    font-size: 24px;
+    text-align: right;
+    margin: 30px 0 35px 0;
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .total-price {
+        font-size: 20px;
+        margin: 20px 0 25px 0;
+        text-align: center;
+    }
+}
+
+.shop-button {
+    display: block;
+    width: 96%;
+    text-align: center;
+    padding: 18px;
+    background-color: #2dd4bf;
+    color: #0a0a0a;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(45, 212, 191, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    animation: buttonFadeIn 0.5s ease-out;
+}
+
+@media (max-width: 768px) {
+    .shop-button {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+.shop-button:hover {
+    background-color: #14b8a6;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(45, 212, 191, 0.4);
+}
+
+@keyframes buttonFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease-out;
+    
+}
+
+.modal {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    filter: drop-shadow(0 0 3px #14b8a6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    max-width: 400px;
+    width: 90%;
+    animation: modalSlide 0.4s ease-out;
+}
+
+.modal p {
+    color: #f5f5f5;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.modal-buttons button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.modal-buttons button:first-child {
+    background-color: #ff4d4d;
+    color: #ffffff;
+}
+
+.modal-buttons button:last-child {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.modal-buttons button:hover {
+    transform: translateY(-2px);
+}
+
+.modal-buttons button:first-child:hover {
+    background-color: #ff3333;
+}
+
+.modal-buttons button:last-child:hover {
+    background-color: #3a3a3a;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes modalSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .modal {
+        padding: 20px;
+    }
+    
+    .modal p {
+        font-size: 18px;
+    }
+    
+    .modal-buttons button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+

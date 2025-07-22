@@ -1,0 +1,133 @@
+/* Header styles */
+.header {
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 3px #00ff88;
+    transition: all 0.4s ease;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 30px;
+    border: 1px solid #333;
+    max-width: fit-content;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0e0e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+
+.nav-logo:hover {
+    color: #00ff88;
+    transform: scale(1.05);
+    background-color: #222;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #b0b0b0;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.nav-item:hover {
+    color: #00ff88;
+    background-color: #222;
+}
+
+/* Main content styles */
+.main-content {
+    position: relative;
+    z-index: 0;
+    margin-bottom: 80px;
+    padding: 20px;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 8px 15px;
+        max-width: 90%;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-logo {
+        font-size: 20px;
+        padding: 6px 10px;
+    }
+
+    .nav-links {
+        gap: 10px;
+    }
+
+    .nav-item {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 13px 0px;
+        max-width: 95%;
+    }
+
+    .nav-menu {
+        gap: 8px;
+    }
+
+    .nav-logo {
+        font-size: 18px;
+        padding: 4px 8px;
+        letter-spacing: 1px;
+    }
+
+    .nav-links {
+        gap: 8px;
+    }
+
+    .nav-item {
+        padding: 4px 8px;
+        font-size: 15px;
+    }
+
+    .main-content {
+        margin-bottom: 60px;
+        padding: 15px;
+    }
+}
